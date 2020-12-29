@@ -1,0 +1,123 @@
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+    font-family: 'josefin sans', sans-serif;
+}
+
+header{
+ background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('travel\ india.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ width:100%; height:1024px;
+}
+
+nav{
+    width: 100%; height: 15vh;
+    background:rgba(0,0,0,0.2);
+    color: white; display: flex; justify-content:space-between;
+    align-items:center; text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%; text-align: center;
+    /*background: seagreen;*/
+}
+
+nav .menu{
+    width: 40%; 
+    display: flex; 
+    justify-content: space-around;
+    margin-right: 20px;
+}
+ 
+nav .menu a{
+width:25%;
+text-decoration: none;
+color: white;
+txt
+font-weight: bold;
+}
+
+nav.menu a:first-child{
+    color:#00b894;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; color:gold;
+}
+
+section{
+
+}
+
+section h3{
+    font-size: 40px; font-weight: 200; letter-spacing: 4px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0px 20px;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 30px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone{
+    background: #fff;
+    color: #000 ;
+}
+
+.btnone:hover{
+    background: #00b894;
+    color: white;  
+}
+
+section .btntwo{
+    background: #00b894;
+    color: white;  
+}
+
+.btntwo:hover{
+     background: #fff;
+     color: #000 ;
+}
+
+.change_content:after{
+    content:'';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{ content:"india gate"; }
+    20%{ content:"lotus temple"; }
+    35%{ content:"kutuminar";}
+    60%{ content:"lalkila"; }
+    80%{ content:"jamamajzid"; }
+    100%{ content:"chandnichowk";} 
+}
